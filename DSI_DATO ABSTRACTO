@@ -1,0 +1,23 @@
+class ListaAlumnos:
+    def __init__(self):
+        self.alumnos = []  # Inicializa el atributo alumnos como una lista vacía
+    
+    def matricular_alumno(self, nombre):
+        self.alumnos.append(nombre)  # Agrega el nombre del alumno a la lista de alumnos
+    
+    def mostrar_alumnos(self):
+        print("Alumnos matriculados:")
+        for alumno in self.alumnos:
+            print(alumno)
+
+
+# Crear un objeto de tipo "ListaAlumnos"
+lista_alumnos = ListaAlumnos()
+
+# Matricular alumnos
+lista_alumnos.matricular_alumno("William")
+lista_alumnos.matricular_alumno("Alexander")
+lista_alumnos.matricular_alumno("Carlos")
+
+# Mostrar los alumnos matriculados
+lista_alumnos.mostrar_alumnos()
